@@ -1,3 +1,4 @@
+import Button from "../components/Button";
 import { words } from "../constants";
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
         <img src="/public/images/bg.png" alt="background" />
       </div>
       <div className="hero-layout">
-        {/* Left Side */}
+        {/* Left Side: Hero Content */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5 ">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
@@ -34,10 +35,22 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
+
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              Hello, it's <b>RVA</b>, a developper and designer based in France.
+            </p>
+            <Button 
+              className="md:w-80 w-60 md:h-16 h-12"
+              id="button"
+              text="See my Work"
+
+              />
           </div>
         </header>
 
-        {/* Right Side */}
+        {/* Right Side: 3D Model */}
+          
+
       </div>
     </section>
   );
