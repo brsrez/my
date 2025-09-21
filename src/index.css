@@ -320,6 +320,37 @@ section {
       }
     }
   }
+
+  .liquid-underline {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px; /* thinner underline */
+    width: 100%;
+    background: white;
+    border-radius: 999px;
+    transform: scaleX(0);
+    transform-origin: center;
+    filter: blur(0.5px);
+    pointer-events: none;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+      border-radius 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s, filter 0.5s;
+  }
+
+  .navbar-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+
+  .navbar-link:hover .liquid-underline,
+  .navbar-link:focus .liquid-underline {
+    transform: scaleX(1);
+    border-radius: 4px;
+    filter: blur(0);
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+      border-radius 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.1s, filter 0.3s;
+  }
 }
 
 /* Hero text slider starts */
