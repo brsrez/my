@@ -1,3 +1,4 @@
+import LogoSection from "./components/LogoSection";
 import Hero from "./sections/Hero";
 import ShowcaseSection from "./sections/ShowcaseSection";
 
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Hero />
       <ShowcaseSection />
+      <LogoSection />
     </>
   );
 };
