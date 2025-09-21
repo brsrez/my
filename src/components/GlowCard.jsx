@@ -32,7 +32,7 @@ const GlowCard = ({ children, review, className = "" }) => {
   return (
     <div
       ref={cardRef}
-      className={`card card-border timeline-card rounded-xl p-10 ${className}`}
+      className={`card card-border timeline-card rounded-xl mb-5 break-inside-avoid-column p-10 ${className}`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
